@@ -1,0 +1,27 @@
+What the hell is this?
+
+This is a very simple CMS made with javascript and php for those times when you are making a really dumb page and you don't want the client to be calling you every 5 minutes for every little content change.
+
+The setup is too simple: 
+
+1. create a php table in your sql database as follows
+
+content{
+	id int(255)
+	field varchar(200)
+	contentValue varchar(9999)
+	last_updated timestamp
+}
+
+2. Drop the javascript reference at the bottom of your page
+<script type="text/javascript" src="simplicity-cms.js"/>
+
+3. add attribute rel='cms' to any text field you would like to be editable and a unique id.
+
+4. for each editable tag, add the unique id as a key to the content table in db
+
+THATS ALL FOR NOW
+
+I aim to cut these steps down where possible and am welcome to suggestions
+
+Franz
